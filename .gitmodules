@@ -1,0 +1,3 @@
+[submodule "Cloudjumper-Sensors"]
+	path = Cloudjumper-Sensors
+	url = git@github.com:UMass-Lowell-Rocketry-Club/Cloudjumper-Sensors

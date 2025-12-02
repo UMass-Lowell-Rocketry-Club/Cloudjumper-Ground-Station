@@ -3,3 +3,7 @@
 	url = https://github.com/UMass-Lowell-Rocketry-Club/Cloudjumper-Sensors
 	branch = main
 	update = merge
+[push]
+	recurseSubmodules = on-demand
+[submodule]
+	recurse = true

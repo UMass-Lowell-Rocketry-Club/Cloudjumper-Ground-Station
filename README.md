@@ -28,3 +28,5 @@ Pulling changes to a submodule is a problem though, since by default this will r
 Also, by default pushing changes to the main repository will **not** push changes to submodules. You can always push your changes directly from the submodule directories, but if you want this to happen automatically you can update the configuration with `git config -f .gitmodules push.recurseSubmodules on-demand`, which automatically pushes any changes from all submodules before pushing changes to the main repository.
 
 Finally, you can run `git config -f .gitmodules submodule.recurse true` to make any commands that can recurse submodules do it automatically. This is most useful for `git pull`, which will now update all submodules automatically.
+
+git config -f .gitmodules submodule.Cloudjumper-Sensors.pushurl git@github.com:UMass-Lowell-Rocketry-Club/Cloudjumper-Sensors

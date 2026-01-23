@@ -30,3 +30,6 @@ Also, by default pushing changes to the main repository will **not** push change
 Finally, you can run `git config -f .gitmodules submodule.recurse true` to make any commands that can recurse submodules do it automatically. This is most useful for `git pull`, which will now update all submodules automatically.
 
 git config -f .gitmodules submodule.Cloudjumper-Sensors.pushurl git@github.com:UMass-Lowell-Rocketry-Club/Cloudjumper-Sensors
+
+
+This is a test commit to edit an existing file

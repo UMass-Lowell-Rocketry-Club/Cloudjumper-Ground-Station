@@ -2,9 +2,3 @@
 	path = Cloudjumper-Sensors
 	url = https://github.com/UMass-Lowell-Rocketry-Club/Cloudjumper-Sensors
 	branch = main
-	update = merge
-	pushurl = git@github.com:UMass-Lowell-Rocketry-Club/Cloudjumper-Sensors
-[push]
-	recurseSubmodules = on-demand
-[submodule]
-	recurse = true

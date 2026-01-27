@@ -14,4 +14,4 @@ If you want to edit the repository, use this command instead:
 git clone --recurse-submodules git@github.com:UMass-Lowell-Rocketry-Club/Cloudjumper-Ground-Station.git
 ```
 
-If you want to edit the repository you should also read the [setup instructions](link goes here).
+If you want to edit the repository you should also read the [setup instructions](https://github.com/UMass-Lowell-Rocketry-Club/Cloudjumper-Sensors/blob/main/SUBMODULE%20MAINTENANCE.md#editing-submodules).

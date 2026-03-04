@@ -54,7 +54,7 @@ These are the steps taken to set up the Ground Station Raspberry Pi.
 
 ### Eduroam Configuration
 
-1. Run `ipconfig` on the Pi. Under `lan0` will be the 12-digit MAC address.
+1. Run `ifconfig` on the Pi. Under `lan0` or `wlan0` will be the 12-digit MAC address.
 2. Go to the [My Devices Portal](https://www.uml.edu/it/services/get-connected/my-devices-portal.aspx) on a device with your UMass Lowell credentials.
 3. Sign into the device portal with your credentials.
 4. Click **Add New Device** at the top of the page.

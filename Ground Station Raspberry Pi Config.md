@@ -1,4 +1,4 @@
-# Ground Station Raspberry Pi Setup
+# Ground Station Raspberry Pi Config
 
 These are the steps taken to set up the Ground Station Raspberry Pi.
 

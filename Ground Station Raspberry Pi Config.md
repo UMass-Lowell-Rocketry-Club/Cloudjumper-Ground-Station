@@ -114,7 +114,7 @@ preserve_hostname: true
 The main **sshd** config file is `/etc/ssh/sshd_config`. This could be edited directly, but it includes a line at the top, `Include /etc/ssh/sshd_config.d/*.conf`, which means any file in `/etc/ssh/sshd_config.d/` with the extension `.conf` will be evaluated first. As such, all sshd config options are stored in **`/etc/ssh/sshd_config.d/sshd_custom_config.conf`:**
 
 ```bash
-# This file is fully written for the rocketry club pi with help from the following sources:
+# This file is written for the rocketry club pi with help from the following sources:
 # - https://www.ssh.com/academy/ssh/sshd_config
 # - https://www.raspberrypi.com/documentation/computers/remote-access.html
 # - https://www.howtogeek.com/devops/what-is-ssh-agent-forwarding-and-how-do-you-use-it/
@@ -150,6 +150,9 @@ git config --global user.email "rocketry@rocketrypie.local"
 *`.bashrc` includes a line to evaluate `.bash_aliases` as well and recommends placing aliases in `.bash_aliases`.*
 
 ```bash
+# Alias from eza (better ls) -l to le
+alias le='eza -l'
+
 # Alias to reload the default config file in the current terminal session
 alias reload="source ~/.bashrc"
 
@@ -159,16 +162,18 @@ alias c="clear"
 
 ## Installed Software
 
+## eza
+
+An alternative to `ls` with better formatting.
+
 ```bash
-# aptitude (apt package search tool)
-sudo apt install aptitude
+sudo apt install eza
+```
 
-# cmake (multiplatform build tool)
-sudo apt install cmake
+## fastfetch
 
-# GitHub CLI (CLI for managing repositories on GitHub)
-sudo apt install gh
+A tool to display the system logo and information about the system.
 
-# fastfetch (tool to display system logo and info)
+```bash
 sudo apt install fastfetch
 ```

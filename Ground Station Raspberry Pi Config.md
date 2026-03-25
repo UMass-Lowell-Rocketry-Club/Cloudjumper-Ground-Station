@@ -12,7 +12,7 @@ Information about the Raspberry Pi system itself.
 |---------|----------------------------------|
 | Model   | Raspberry Pi 5                   |
 | Memory  | 8 GB                             |
-| Storage | 256GB SanDisk Ultra MicroSD Card |
+| Storage | 256GB SanDisk Ultra MicroSD card |
 
 ### OS Information
 
@@ -26,32 +26,34 @@ Information about the Raspberry Pi system itself.
 
 These are the instructions for installing the OS on the Raspberry Pi.
 
-### OS Customization
+### MicroSD Flashing
 
-- **General**
-  - Set hostname: `rocketrypie` (connect via `[user]@rocketrypie.local`)
-  - Set username and password: **Yes**
-    - Username: `rocketry`
-    - Password: *See Principal Software Lead for access*
-  - Configure Wireless LAN: **No**
-  - Set locale settings: **Yes**
-    - Time zone: `America/New_York`
-    - Keyboard layout: `us`
-- **Services**
-  - Enable SSH: **Yes**
-    - Use password authentication: **Yes**
-    - Allow public-key authentication only: **Yes**
-      - *Note: Public-key authentication should be used for any device which will be persistantly available to the internet. The ground station should not be persistantly available.*
-- **Options**
-  - Play sound when finished: **No**
-  - Eject media when finished: **Yes**
-  - Enable telemetry: **Yes**
+For a normal Linux installation, installation media is created and connected to the system and then the user interactively installs the operating system on the computer's internal storage. However, traditionally Raspberry Pi systems run off a removable MicroSD card which is imaged using [Raspberry Pi Imager](https://www.raspberrypi.com/software/). This software installs a Linux operating system on a MicroSD card such that the Raspberry Pi can boot straight from the card, no interactive installation required.
 
-### Setup Instructions
-
-1. Apply OS Customization Settings and click `Next`. Click `Yes` to confirm erasure of existing data on the microSD card. Writing may take some time.
-2. One data writing is complete, take the microSD card out of the formatting computer. With the Raspberry Pi disconnected from power, insert the microSD card into the bottom of the Pi, opposite of the USB ports.
-3. Connect the Pi to power. Boot up may take a few minutes.
+1. Install [Raspberry Pi Imager](https://www.raspberrypi.com/software/) on your computer. On macOS I did this with `brew install --cask raspberry-pi-imager`.
+2. Connect the MicroSD card to your computer.
+3. Open **Raspberry Pi Imager** and set the following configuration options:
+    1. Device: **Raspberry Pi 5**
+    2. OS: **Raspberry Pi OS (other) > Raspberry Pi OS Lite (64-bit)**
+    3. Storage: *The label for the MicroSD card*
+    4. Customization:
+        1. Hostname: `raspberryslice2` (connect via [user]@raspberryslice2.local)
+        2. Localization:
+            1. Capital city: **Washington, D.C. (United States)**
+            2. Time zone: **America/New_York**
+            3. Keyboard layout: **us**
+        3. User:
+            1. Username: `rocketry`
+            2. Password: *See Principal Software Lead for access*
+        4. Wi-Fi:
+            1. Select **Open Network**
+            2. SSID: `UMassLowell`
+        5. Remote access:
+            1. Enable SSH: **Yes**
+            2. Authentication mechanism: **Use password authentication**
+        6. Enable Raspberry Pi Connect: **No**
+4. Once all configuration options have been entered, verify the changes and write to the MicroSD card.
+5. **Raspberry Pi Imager** may eject the MicroSD card automatically once done imaging, but you should make sure it's ejected before removing it from your computer.
 
 ## Settings
 

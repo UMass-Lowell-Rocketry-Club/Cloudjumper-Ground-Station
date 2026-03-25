@@ -1,18 +1,30 @@
 # Ground Station Raspberry Pi Config
 
-These are the steps taken to set up the Ground Station Raspberry Pi.
+These are the steps taken to set up the Ground Station Raspberry Pi and the configuration options set on it. **This document should be updated over time as the configuration changes, including settings, essential configuration files, and .**
+
+## System Information
+
+Information about the Raspberry Pi system itself.
+
+### Hardware Information
+
+| Name    | Specification                    |
+|---------|----------------------------------|
+| Model   | Raspberry Pi 5                   |
+| Memory  | 8 GB                             |
+| Storage | 256GB SanDisk Ultra MicroSD Card |
+
+### OS Information
+
+| Name       | Specification                 |
+|------------|-------------------------------|
+| OS         | Raspberry Pi OS Lite (64-bit) |
+| OS Version | Debian 13 - Trixie            |
+| Hostname   | `raspberryslice2`             |
 
 ## Initial Setup
 
-**Raspberry Pi OS (64-bit)** was installed on the microSD card using **Raspberry Pi Imager**.
-
-### Device Specifications
-
-| Name    | Specification          |
-| ------- | ---------------------- |
-| Device  | Raspberry Pi 5 B       |
-| RAM     | 8 GB                   |
-| Storage | 128 GB Samsung microSD |
+These are the instructions for installing the OS on the Raspberry Pi.
 
 ### OS Customization
 

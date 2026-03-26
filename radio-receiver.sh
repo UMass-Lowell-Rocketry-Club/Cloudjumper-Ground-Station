@@ -5,4 +5,3 @@
 # Systemd will execute any commands in this script after the system boots.
 
 ping google.com > /home/rocketry/ping-test
-

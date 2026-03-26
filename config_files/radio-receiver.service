@@ -3,7 +3,8 @@ Description=Rocketry Ground Station Radio Receiver
 
 [Service]
 Type=exec
-ExecStart=/usr/local/bin/radio-receiver.sh
+ExecStart=/home/rocketry/Cloudjumper-Ground-Station/radio-receiver.sh
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target

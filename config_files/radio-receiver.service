@@ -1,0 +1,10 @@
+[Unit]
+Description=Rocketry Ground Station Radio Receiver
+
+[Service]
+Type=exec
+ExecStart=/usr/local/bin/radio-receiver.sh
+
+[Install]
+WantedBy=multi-user.target
+Alias=radio-receiver.service

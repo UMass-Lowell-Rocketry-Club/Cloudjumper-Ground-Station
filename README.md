@@ -16,9 +16,18 @@ git clone --recurse-submodules git@github.com:UMass-Lowell-Rocketry-Club/Cloudju
 
 If you want to edit the repository you should also read the [setup instructions](https://github.com/UMass-Lowell-Rocketry-Club/Cloudjumper-Sensors/blob/main/SUBMODULE%20MAINTENANCE.md#editing-submodules).
 
+## Updating
+
+If you have already downloaded the repository to the ground station, you can update it using the following command:
+
+```bash
+cd ~/Cloudjumper-Ground-Station
+git pull --recurse-submodules  # --recurse-submodules updates Cloudjumper-Sensors too
+```
+
 ## Setting Up The Service
 
-We use a `systemd` service to run the radio receiving program after boot. After pulling changes to this service, there are a few commands that need to be run:
+We use a `systemd` service to run the radio receiving program after boot. After pulling changes to **the service configuration file**, there are a few commands that need to be run:
 
 ```bash
 # copy the config file to the correct location
